@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --ink: #16323b;
   --muted: #5f7480;
   --line: #dce8e9;
@@ -612,5 +612,140 @@ details p {
 
   .timeline li {
     min-height: auto;
+  }
+}
+
+.text-link {
+  display: inline-flex;
+  margin-top: 10px;
+  color: var(--teal-dark);
+  font-weight: 900;
+}
+
+.feature-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 28px;
+  background: #fff;
+  border: 1px solid #c8dfdf;
+  border-radius: 8px;
+  box-shadow: 0 8px 28px rgba(18, 65, 72, 0.06);
+}
+
+.feature-panel p {
+  max-width: 760px;
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.page-hero {
+  padding: clamp(42px, 7vw, 88px) clamp(18px, 5vw, 72px);
+  background: linear-gradient(135deg, #eaf7f4 0%, #f9fcfc 62%, #fff8e6 100%);
+}
+
+.page-hero .lead {
+  max-width: 880px;
+}
+
+.breadcrumb {
+  margin-bottom: 18px;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.breadcrumb a {
+  color: var(--teal-dark);
+  font-weight: 800;
+}
+
+.detail-layout {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: clamp(24px, 5vw, 64px);
+}
+
+.detail-nav {
+  position: sticky;
+  top: 96px;
+  align-self: start;
+  display: grid;
+  gap: 8px;
+  padding: 14px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.detail-nav a {
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: var(--teal-dark);
+  font-weight: 800;
+}
+
+.detail-nav a:hover {
+  background: var(--mint);
+}
+
+.detail-content {
+  display: grid;
+  gap: 54px;
+}
+
+.detail-section > h2 {
+  font-size: clamp(28px, 3.5vw, 40px);
+}
+
+.step-list {
+  display: grid;
+  gap: 12px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.step-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.step-list span {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+  place-items: center;
+  color: #fff;
+  background: var(--teal);
+  border-radius: 8px;
+  font-weight: 900;
+}
+
+@media (max-width: 1040px) {
+  .detail-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .detail-nav {
+    position: static;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature-panel {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 760px) {
+  .detail-nav {
+    grid-template-columns: 1fr;
   }
 }
