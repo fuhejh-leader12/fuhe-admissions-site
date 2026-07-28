@@ -345,6 +345,22 @@ details p {
   padding: 22px;
 }
 
+.info-list h3 a {
+  color: var(--teal-dark);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 5px;
+  transition:
+    color 0.18s ease,
+    text-decoration-color 0.18s ease;
+}
+
+.info-list h3 a:hover,
+.info-list h3 a:focus-visible {
+  color: var(--teal);
+  text-decoration-color: currentColor;
+}
+
 .highlight {
   background: #eaf7f4;
 }
