@@ -56,14 +56,11 @@ a {
 }
 
 .brand-mark {
-  display: grid;
   width: 42px;
   height: 42px;
-  place-items: center;
-  color: #fff;
-  background: var(--teal);
+  object-fit: contain;
+  background: #fff;
   border-radius: 8px;
-  font-weight: 800;
 }
 
 .brand strong,
