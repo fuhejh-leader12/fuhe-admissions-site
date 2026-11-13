@@ -921,6 +921,111 @@ details p {
   font-size: clamp(28px, 3.5vw, 40px);
 }
 
+.district-page .page-hero h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.district-page .detail-section {
+  scroll-margin-top: 150px;
+  min-width: 0;
+}
+
+.district-page .detail-section > h2 {
+  font-size: 30px;
+}
+
+.district-requirements {
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
+}
+
+.district-requirements > li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.district-reason {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.district-number {
+  display: grid;
+  flex: 0 0 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 8px;
+  color: var(--teal-dark);
+  background: var(--mint);
+  font-weight: 800;
+}
+
+.district-reason h3 {
+  font-size: 20px;
+}
+
+.district-reason p,
+.district-documents p,
+.district-documents ul,
+.district-reminder p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.district-documents h4 {
+  margin: 0 0 8px;
+  color: var(--teal-dark);
+  font-size: 16px;
+}
+
+.district-documents ul {
+  margin-top: 0;
+  padding-left: 20px;
+}
+
+.district-documents .notice {
+  margin-top: 14px;
+}
+
+.district-footnote,
+.district-contact {
+  margin: 20px 0 0;
+  color: var(--muted);
+}
+
+.district-reminder {
+  padding: 18px 20px;
+  border-left: 4px solid var(--teal);
+  background: var(--soft);
+}
+
+.district-reminder h3 {
+  color: var(--teal-dark);
+  font-size: 22px;
+}
+
+@media (max-width: 760px) {
+  .district-page .page-hero h1 {
+    font-size: 36px;
+  }
+
+  .district-requirements > li {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .district-documents {
+    padding-left: 52px;
+  }
+}
+
 .step-list {
   display: grid;
   gap: 12px;
